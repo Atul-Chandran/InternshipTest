@@ -9,7 +9,7 @@ const environmentDetails = configDetails.configDetails.environmentDetails;
 const hostName = environmentDetails.hostName;
 const port = environmentDetails.port;
 
-app.get('/data',func.sendStockData);
+app.get('/fetchStockData',func.sendStockData);
 
 const server = http.createServer(app);
 
