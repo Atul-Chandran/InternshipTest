@@ -1,6 +1,6 @@
 const environmentDetails = {
     hostName: 'localhost',
-    port: 3000
+    port: 3002
 }
 
 const databaseDetails = {
