@@ -52,6 +52,45 @@ const LeftNav = ({ leftNav }) => {
                     listMaxHeight={700} //by default 140
                 />
             </div>
+            <b style = {leftNavStyling.geographyTypeFilterStyle}>Geography Types</b>
+            <div style = {leftNavStyling.geographyTypeFilterDropdownStyle}>
+                <Searchable
+                        style = {leftNavStyling.style}
+                        value="" //if value is not item of options array, it would be ignored on mount
+                        placeholder="Search Options" // by default "Search"
+                        notFoundText="No result found" // by default "No result found"
+                        options={[{
+                            "label": "Select a value"
+                        }]}
+                        listMaxHeight={700} //by default 140
+                />
+            </div>
+            <b style = {leftNavStyling.geographyFilterStyle}>Geographies </b>
+            <div style = {leftNavStyling.geographyFilterDropdownStyle}>
+                <Searchable
+                        style = {leftNavStyling.style}
+                        value="" //if value is not item of options array, it would be ignored on mount
+                        placeholder="Search Options" // by default "Search"
+                        notFoundText="No result found" // by default "No result found"
+                        options={[{
+                            "label": "Select a value"
+                        }]}
+                        listMaxHeight={700} //by default 140
+                />
+            </div>
+            <b style = {leftNavStyling.frequencyFilterStyle}>Frequency </b>
+            <div style = {leftNavStyling.frequencyFilterDropdownStyle}>
+                <Searchable
+                        style = {leftNavStyling.style}
+                        value="" //if value is not item of options array, it would be ignored on mount
+                        placeholder="Search Options" // by default "Search"
+                        notFoundText="No result found" // by default "No result found"
+                        options={[{
+                            "label": "Select a value"
+                        }]}
+                        listMaxHeight={700} //by default 140
+                />
+            </div>
         </div>
     );
   };

@@ -1,7 +1,7 @@
 const titleStyling = {
-    position: "absolute",
+    position: "relative",
     left: "40px",
-    top: "330px"
+    top: "525px"
 }
 
 const leftNav = {
@@ -10,7 +10,7 @@ const leftNav = {
 
 const hrStyle = {
     position: "relative",
-    top: "300px",
+    top: "560px",
     right: "35px",
     border: "1px solid #FDEFFF",
     width: "65%"
@@ -18,16 +18,70 @@ const hrStyle = {
 
 const conceptFilterStyle = {
     position: "relative",
-    top: "345px",
+    top: "570px",
     backgroundColor: "white",
     color: "black",
-    left: "30px",
+    left: "40px",
+    width: "65%"
+}
+
+const geographyTypeFilterStyle = {
+    position: "relative",
+    top: "620px",
+    backgroundColor: "white",
+    color: "black",
+    left: "40px",
+    width: "65%"
+}
+
+const geographyFilterStyle = {
+    position: "relative",
+    top: "660px",
+    backgroundColor: "white",
+    color: "black",
+    left: "40px",
+    width: "65%"
+}
+
+const frequencyFilterStyle = {
+    position: "relative",
+    top: "720px",
+    backgroundColor: "white",
+    color: "black",
+    left: "40px",
+    width: "65%"
+}
+
+const geographyTypeFilterDropdownStyle = {
+    position: "relative",
+    top: "640px",
+    backgroundColor: "white",
+    color: "black",
+    left: "40px",
+    width: "65%"
+}
+
+const geographyFilterDropdownStyle = {
+    position: "relative",
+    top: "700px",
+    backgroundColor: "white",
+    color: "black",
+    left: "40px",
+    width: "65%"
+}
+
+const frequencyFilterDropdownStyle = {
+    position: "relative",
+    top: "740px",
+    backgroundColor: "white",
+    color: "black",
+    left: "40px",
     width: "65%"
 }
 
 const searchFilterStyle = {
     position: "relative",
-    top: "350px",
+    top: "600px",
     backgroundColor: "white",
     color: "black",
     left: "30px",
@@ -43,6 +97,12 @@ export const leftNavStyling = {
     leftNav,
     hrStyle,
     conceptFilterStyle,
+    geographyTypeFilterStyle,
+    geographyFilterStyle,
+    geographyTypeFilterDropdownStyle,
+    geographyFilterDropdownStyle,
+    frequencyFilterStyle,
     searchFilterStyle,
+    frequencyFilterDropdownStyle,
     style
 }
