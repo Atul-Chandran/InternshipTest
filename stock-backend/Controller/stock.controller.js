@@ -1,6 +1,6 @@
 const MongoClient = require('mongodb').MongoClient;
 const dbDetails = require('../Config/config');
-const dbDet = dbDetails.configDetails.databaseDetails;
+const dbConfigDetails = dbDetails.configDetails.databaseDetails;
 
 
 function sendStockData(request,response){
@@ -8,11 +8,11 @@ function sendStockData(request,response){
 
     // If query parameter has been passed
     if(request.query.tag){
-        MongoClient.connect(dbDet.mongoDBUrl, function(err, db) {
+        MongoClient.connect(dbConfigDetails.mongoDBUrl, function(err, db) {
             if (err) throw err;
-            var dbo = db.db(dbDet.dbName);
+            var dbo = db.db(dbConfigDetails.dbName);
             var query = {$or: [{"Tags": {$regex: ".*" + request.query.tag + ".*"}},{"Tag2": {$regex: ".*"+ request.query.tag +".*"}},{"Tag3": {$regex: ".*"+ request.query.tag +".*"}}]};
-            dbo.collection(dbDet.collectionName).find(
+            dbo.collection(dbConfigDetails.collectionName).find(
                 query,
                 {
                     projection: {
