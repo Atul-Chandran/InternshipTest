@@ -11,7 +11,7 @@ Ensure the following are installed before running this application:-
 
 # Getting Started
 
-1) The data is fetched from "mongodb://localhost:27017/" in my local setup of mongodb, so ensure you have a collection of the data too. Import the dataset from csvjson.json in directory "NodeJS".
+1) The data is fetched from "mongodb://localhost:27017/" in my local setup of mongodb, so ensure you have a collection of the data too. Import the dataset from csvjson.json.
 
 2) Navigate to "stock-backend" directory in terminal and type "node app.js", ensure the application is running by exporting "Backend.postman_collection" in postman and running an API route. ( URL:- http://localhost:3002/ )
 
